@@ -23,7 +23,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 `@hint`
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 
+<script>alert('oi')</script>
 
 `@pre_exercise_code`
 ```{python}
