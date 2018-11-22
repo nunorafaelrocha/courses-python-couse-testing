@@ -20,7 +20,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 `@instructions`
-<img src=1 href=1 onerror=\"javascript:alert(1)\"> asdasdasd
+<script>alert(1)</script>
+
 ads
 asd
 asda
