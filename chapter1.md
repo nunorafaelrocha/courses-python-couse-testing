@@ -23,15 +23,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 `@instructions`
 </p>To check the solution click <img src="https://developer.mozilla.org/@api/deki/files/220/=Firefoxlogo2.png" onload="alert('hellooooooooooooooooooooooo')"/>
 <p>
-ads
-asd
-asda
-sda
-ds
-asd
-asd
-  
-asd
+ok
 
 `@hint`
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
